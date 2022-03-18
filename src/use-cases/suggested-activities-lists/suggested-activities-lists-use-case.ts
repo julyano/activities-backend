@@ -18,7 +18,6 @@ export class SuggestedActivitiesListsUseCase {
       let list = await this.repository.find(suggested_weather_conditions);
       return list;
     } catch (err) {
-      console.log(err.message);
       throw new Error(err.message);
     }
   }
