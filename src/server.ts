@@ -1,3 +1,4 @@
 import { app } from "./app";
+require('dotenv').config();
 
-app.listen(3333);
+app.listen(process.env.DB_LOCAL_PORT || 3333)
